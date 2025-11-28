@@ -1,0 +1,104 @@
+#es-rc #es-rc-content {
+  font-family: "font-name", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #0d1116;
+  background-color: #f6f8fa;
+  max-width: 990px;
+  margin: auto;
+}
+#es-rc #es-rc-content ::-moz-selection {
+  background-color: #69a7dd;
+  color: #fff;
+}
+#es-rc #es-rc-content ::selection {
+  background-color: #69a7dd;
+  color: #fff;
+}
+#es-rc #es-rc-content * {
+  box-sizing: border-box;
+}
+#es-rc #es-rc-content p {
+  margin: 0;
+}
+#es-rc #es-rc-content img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-rc #es-rc-content button {
+  display: block;
+}
+#es-rc #es-rc-content .es-section-title {
+  font-family: "font-name", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-block: 16px;
+}
+#es-rc #es-rc-content .es-kv {
+  background-color: #f6f8fa;
+}
+#es-rc #es-rc-content .es-kv__img--desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-kv__img--mobile {
+    display: none;
+  }
+  #es-rc #es-rc-content .es-kv__img--desktop {
+    display: block;
+  }
+}
+#es-rc #es-rc-content .es-section {
+  margin-block: 16px;
+}
+#es-rc #es-rc-content .es-section__button {
+  background-color: #f6a255;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-section__button {
+    background-color: #69a7dd;
+  }
+}
+#es-rc #es-rc-content .es-slider .swiper-button-prev:after,
+#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
+#es-rc #es-rc-content .es-slider .swiper-button-next:after,
+#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+#es-rc #es-rc-content .es-slider .swiper-button-next,
+#es-rc #es-rc-content .es-slider .swiper-button-prev {
+  width: unset;
+  height: unset;
+  position: static;
+  justify-content: unset;
+  margin: 0;
+  display: unset;
+}
+#es-rc #es-rc-content .es-slider__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#es-rc #es-rc-content .es-slider__buttons--prev__img, #es-rc #es-rc-content .es-slider__buttons--next__img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+#es-rc #es-rc-content .es-slider__buttons--prev__img {
+  transform: rotate(180deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  #es-rc #es-rc-content * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}/*# sourceMappingURL=styles.css.map */
