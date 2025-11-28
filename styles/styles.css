@@ -1,20 +1,32 @@
+.breadcrumbs {
+  display: none;
+}
+
+main#maincontent {
+  margin-top: 0;
+}
+
+.columns div.column.main {
+  padding-bottom: 0;
+}
+
 #es-rc #es-rc-content {
   font-family: "font-name", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
-  color: #0d1116;
-  background-color: #f6f8fa;
-  max-width: 990px;
+  color: #000000;
+  background: #ffffff;
   margin: auto;
+  container: rc-main/inline-size;
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #69a7dd;
-  color: #fff;
+  background-color: #e2011e;
+  color: #ffffff;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #69a7dd;
-  color: #fff;
+  background-color: #e2011e;
+  color: #ffffff;
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -36,34 +48,6 @@
   font-weight: 700;
   text-align: center;
   margin-block: 16px;
-}
-#es-rc #es-rc-content .es-kv {
-  background-color: #f6f8fa;
-}
-#es-rc #es-rc-content .es-kv__img--desktop {
-  display: none;
-}
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-kv__img--mobile {
-    display: none;
-  }
-  #es-rc #es-rc-content .es-kv__img--desktop {
-    display: block;
-  }
-}
-#es-rc #es-rc-content .es-section {
-  margin-block: 16px;
-}
-#es-rc #es-rc-content .es-section__button {
-  background-color: #f6a255;
-  padding: 8px 16px;
-  cursor: pointer;
-  margin: auto;
-}
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-section__button {
-    background-color: #69a7dd;
-  }
 }
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,

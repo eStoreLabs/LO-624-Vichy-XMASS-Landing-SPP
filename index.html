@@ -14,14 +14,68 @@
     <div id="es-rc">
         <div id="es-rc-content">
             <div class="es-kv">
-                <p class="es-section-title">KV Section title</p>
-                <img class="es-kv__img--mobile" src="./images/example-mobile.png" alt="placeholder mobile">
-                <img class="es-kv__img--desktop" src="./images/example-dekstop.png" alt="placeholder desktop">
+                <div class="es-kv__right">
+                    <img src="./images/kv-photo.jpg" alt="Dwie odświętnie ubrane kobiety cieszą się z produktów Vichy"
+                        class="es-kv__photo">
+                </div>
+                <div class="es-kv__left">
+                    <div class="es-kv__logo">
+                        <img src="./images/vichy-logo.jpg" alt="Logo Vichy Laboratories" class="es-kv__logo--img">
+                    </div>
+                    <div class="es-kv__text-wrapper">
+                        <p class="es-kv__text--num1">N &#176; 1</p>
+                        <p class="es-kv__text">Marka dermokosmetyczna <strong class="es-kv__text--strong">najczęściej
+                                polecana w Polsce </strong>przeciw starzeniu *</p>
+                        <p class="es-kv__text--disclaimer">*Badanie rynku dermokosmetyków z udziałem dermatologów w
+                            Polsce, AplusA, I-IV 2024</p>
+                    </div>
+                </div>
             </div>
-            <div class="es-section">
-                <p class="es-section-title">Section title</p>
-                <button class="es-section__button">Click</button>
+
+            <div class="es-sets">
+                <picture class="es-sets__bg">
+                    <source media="(min-width: 577px)" srcset="./images/sets-bg-dt.jpg">
+                    <source media="(max-width: 576px)" srcset="./images/sets-bg-mb.jpg">
+                    <img src="./images/sets-bg-mb.jpg" alt="">
+                </picture>
+                <div class="es-sets__wrapper">
+                    <picture class="es-sets__products">
+                        <source media="(min-width: 577px)" srcset="./images/packshots-desktop.png">
+                        <source media="(max-width: 576px)" srcset="./images/packshots-mobile.png">
+                        <img src="./images/packshots-mobile.png" alt="Zestawy prezentowe Vichy">
+                    </picture>
+                    <div class="es-sets__text">
+                        <p class="es-sets__headline">Odkryj wyjątkowe zestawy prezentowe Vichy</p>
+                        <p class="es-sets__description">Szukasz idealnego prezentu dla siebie lub bliskiej Ci osoby?
+                            Wybierz dermokosmetyki Vichy -
+                            zaawansowaną pielęgnację bogatą w składniki aktywne o potwierdzonej skuteczności, dopasowaną
+                            do wieku i rodzaju skóry.</p>
+                    </div>
+                </div>
+
             </div>
+
+            <nav class="es-nav">
+                <ul class="es-nav__list">
+                    <li class="es-nav__item"><a href="#es-ageing-skin" class="es-nav__link">Pierwsze oznaki
+                            starzenia</a></li>
+                    <li class="es-nav__item"><a href="#es-mature-skin" class="es-nav__link">Skóra dojrzała</a></li>
+                    <li class="es-nav__item"><a href="#es-for-men" class="es-nav__link">Dla mężczyzn</a></li>
+                </ul>
+            </nav>
+
+            <div class="es-ageing" id="es-ageing-skin">
+                <p class="es-section-title">Pierwsze oznaki starzenia</p>
+            </div>
+
+            <div class="es-ageing" id="es-mature-skin">
+                <p class="es-section-title">Pielęgnacja skóry dojrzałej</p>
+            </div>
+
+            <div class="es-ageing" id="es-for-men">
+                <p class="es-section-title">Pielęgnacja dla mężczyzn</p>
+            </div>
+
             <div class="es-slider es-section">
                 <p class="es-section-title">Slider</p>
                 <!-- Slider main container -->
@@ -50,11 +104,10 @@
                     <div class="es-swiper-scrollbar"></div>
                 </div>
             </div>
+
         </div>
-    </div>
-    <script src="./scripts/click.js"></script>
-    <script src="./scripts/swiper-bundle.min.js"></script>
-    <script src="./scripts/swiperInit.js"></script>
+        <script src="./scripts/swiper-bundle.min.js"></script>
+        <script src="./scripts/swiperInit.js"></script>
 </body>
 
 </html>
