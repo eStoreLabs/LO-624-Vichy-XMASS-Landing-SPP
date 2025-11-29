@@ -8,9 +8,12 @@ $text-secondary: "Futura Demi", sans-serif;
 $fw-regular: 400;
 $fw-bold: 700;
 
-$fs-base: 16px;
-$fs-header: 32px;
+$fs-base-mb: 22px;
+$fs-base-dt: 27px;
+$fs-header-mb: 35px;
+$fs-header-dt: 40px;
 
+$px-XS: 4px;
 $px-S: 8px;
 $px-M: 16px;
 $px-L: 24px;
@@ -22,7 +25,7 @@ $color-bg: #ffffff;
 $color-accent: #e2011e;
 $color-accent-2: #d6d6d6;
 
-$media-breakpoint-xs: 440px;
+$media-breakpoint-xs: 436px;
 $media-breakpoint-sm: 576px;
 $media-breakpoint-md: 768px;
 $media-breakpoint-lg: 992px;
@@ -41,13 +44,19 @@ main#maincontent {
 
 #es-rc #es-rc-content {
   font-family: $text-main;
-  font-size: $fs-base;
+  font-size: $fs-base-mb;
   font-weight: $fw-regular;
   line-height: 1.2;
   color: $color-main;
   background: $color-bg;
   margin: auto;
   container: rc-main / inline-size;
+  padding: $px-L;
+
+  @media (min-width: 576px) {
+    font-size: $fs-base-dt;
+    padding: $px-XL;
+  }
 
   ::selection {
     background-color: $color-accent;
@@ -74,12 +83,86 @@ main#maincontent {
     display: block;
   }
 
+  strong {
+    font-family: $text-secondary;
+    font-weight: $fw-bold;
+  }
+
   .es-section-title {
     font-family: $text-secondary;
-    font-size: $fs-header;
+    font-size: $fs-header-mb;
     font-weight: $fw-bold;
     text-align: center;
     margin-block: $px-M;
+    text-transform: uppercase;
+    @container rc-main (min-width: 576px) {
+      font-size: $fs-header-dt;
+    }
+  }
+
+  .es-section {
+    margin-block: $px-L;
+  }
+
+  .es-kv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $px-XL;
+    @container rc-main (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
+    &__right {
+      max-width: 500px;
+      @container rc-main (min-width: 768px) {
+        max-width: 550px;
+        width: 60%;
+      }
+    }
+    &__left {
+      @container rc-main (min-width: 436px) {
+        display: flex;
+        align-items: center;
+        gap: $px-L;
+      }
+      @container rc-main (min-width: 768px) {
+        flex-direction: column;
+      }
+    }
+    &__logo {
+      &--img {
+        max-width: 200px;
+        @container rc-main (min-width: 768px) {
+          max-width: 300px;
+        }
+      }
+    }
+    &__text-wrapper {
+      text-align: center;
+      text-wrap: balance;
+      max-width: 300px;
+      font-size: calc($fs-base-mb * 0.9);
+      :not(:last-child) {
+        text-transform: uppercase;
+      }
+      @container rc-main (min-width: 768px) {
+        max-width: 500px;
+      }
+    }
+    &__text--num1 {
+      background-color: $color-accent;
+      max-width: max-content;
+      margin: auto;
+      color: $color-bg;
+      padding: $px-XS $px-S;
+      margin-block: $px-S;
+      font-family: $text-secondary;
+    }
+    &__text--disclaimer {
+      font-size: calc($fs-base-mb * 0.6);
+      margin-top: $px-M;
+    }
   }
 
   // Swiper styles, reset some of the inherent ones
