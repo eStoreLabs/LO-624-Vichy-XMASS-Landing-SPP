@@ -117,30 +117,33 @@ main#maincontent {
     align-items: center;
     justify-content: center;
     gap: $px-XL;
-    @container rc-main (min-width: 768px) {
+    @media (min-width: $media-breakpoint-md) {
       flex-direction: row-reverse;
+      gap: unset;
+      justify-content: flex-end;
     }
     &__right {
       max-width: 500px;
-      @container rc-main (min-width: 768px) {
-        max-width: 550px;
+      @media (min-width: $media-breakpoint-md) {
+        max-width: 750px;
         width: 60%;
       }
     }
     &__left {
-      @container rc-main (min-width: 436px) {
+      @media (min-width: $media-breakpoint-xs) {
         display: flex;
         align-items: center;
         gap: $px-L;
       }
-      @container rc-main (min-width: 768px) {
+      @media (min-width: $media-breakpoint-md) {
         flex-direction: column;
+        width: 40%;
       }
     }
     &__logo {
       &--img {
         max-width: 200px;
-        @container rc-main (min-width: 768px) {
+        @media (min-width: $media-breakpoint-md) {
           max-width: 300px;
         }
       }
@@ -153,7 +156,7 @@ main#maincontent {
       :not(:last-child) {
         text-transform: uppercase;
       }
-      @container rc-main (min-width: 768px) {
+      @media (min-width: $media-breakpoint-md) {
         max-width: 500px;
       }
     }
@@ -177,7 +180,7 @@ main#maincontent {
       background-color: $color-accent-2;
       padding: $px-M $px-S;
       margin-top: -43%;
-      @media (min-width: 768px) {
+      @media (min-width: $media-breakpoint-md) {
         margin-top: -29%;
         padding: $px-L $px-M;
       }
@@ -187,7 +190,7 @@ main#maincontent {
       margin-top: 13%;
       text-align: center;
       text-wrap: balance;
-      @media (min-width: 768px) {
+      @media (min-width: $media-breakpoint-md) {
         margin-top: 4%;
       }
     }
@@ -198,13 +201,13 @@ main#maincontent {
       color: $color-accent;
       margin-bottom: $px-S;
       text-transform: uppercase;
-      @media (min-width: 768px) {
+      @media (min-width: $media-breakpoint-md) {
         font-size: 40px;
       }
     }
     &__description {
       font-size: 22px;
-      @media (min-width: 768px) {
+      @media (min-width: $media-breakpoint-md) {
         font-size: 25px;
       }
     }

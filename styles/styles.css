@@ -82,36 +82,39 @@ main#maincontent {
   justify-content: center;
   gap: 32px;
 }
-@container rc-main (min-width: 768px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv {
     flex-direction: row-reverse;
+    gap: unset;
+    justify-content: flex-end;
   }
 }
 #es-rc #es-rc-content .es-kv__right {
   max-width: 500px;
 }
-@container rc-main (min-width: 768px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv__right {
-    max-width: 550px;
+    max-width: 750px;
     width: 60%;
   }
 }
-@container rc-main (min-width: 436px) {
+@media (min-width: 436px) {
   #es-rc #es-rc-content .es-kv__left {
     display: flex;
     align-items: center;
     gap: 24px;
   }
 }
-@container rc-main (min-width: 768px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv__left {
     flex-direction: column;
+    width: 40%;
   }
 }
 #es-rc #es-rc-content .es-kv__logo--img {
   max-width: 200px;
 }
-@container rc-main (min-width: 768px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv__logo--img {
     max-width: 300px;
   }
@@ -125,7 +128,7 @@ main#maincontent {
 #es-rc #es-rc-content .es-kv__text-wrapper :not(:last-child) {
   text-transform: uppercase;
 }
-@container rc-main (min-width: 768px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv__text-wrapper {
     max-width: 500px;
   }
