@@ -31,6 +31,8 @@ $media-breakpoint-md: 768px;
 $media-breakpoint-lg: 992px;
 $media-breakpoint-xl: 1200px;
 
+$transition: all 0.3s ease-in-out;
+
 // remove SPP breadcrumbs and adjust main content margin/padding
 .breadcrumbs {
   display: none;
@@ -52,10 +54,15 @@ main#maincontent {
   margin: auto;
   container: rc-main / inline-size;
   padding: $px-L;
+  max-width: 1440px;
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     font-size: $fs-base-dt;
     padding: $px-XL;
+  }
+
+  @media (min-width: 992px) {
+    padding: $px-XXL;
   }
 
   ::selection {
@@ -95,7 +102,7 @@ main#maincontent {
     text-align: center;
     margin-block: $px-M;
     text-transform: uppercase;
-    @container rc-main (min-width: 576px) {
+    @container rc-main (min-width: 768px) {
       font-size: $fs-header-dt;
     }
   }
@@ -162,6 +169,43 @@ main#maincontent {
     &__text--disclaimer {
       font-size: calc($fs-base-mb * 0.6);
       margin-top: $px-M;
+    }
+  }
+
+  .es-sets {
+    &__wrapper {
+      background-color: $color-accent-2;
+      padding: $px-M $px-S;
+      margin-top: -43%;
+      @container rc-main (min-width: 768px) {
+        margin-top: -28%;
+      }
+    }
+
+    &__text {
+      margin-top: 10%;
+      text-align: center;
+      text-wrap: balance;
+      @container rc-main (min-width: 768px) {
+        margin-top: 4%;
+      }
+    }
+    &__headline {
+      font-family: $text-secondary;
+      font-size: 32px;
+      font-weight: $fw-bold;
+      color: $color-accent;
+      margin-bottom: $px-S;
+      text-transform: uppercase;
+      @container rc-main (min-width: 768px) {
+        font-size: 40px;
+      }
+    }
+    &__description {
+      font-size: 22px;
+      @container rc-main (min-width: 768px) {
+        font-size: 25px;
+      }
     }
   }
 

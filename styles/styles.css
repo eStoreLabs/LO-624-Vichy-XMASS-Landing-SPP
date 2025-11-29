@@ -20,11 +20,17 @@ main#maincontent {
   margin: auto;
   container: rc-main/inline-size;
   padding: 24px;
+  max-width: 1440px;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content {
     font-size: 27px;
     padding: 32px;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content {
+    padding: 40px;
   }
 }
 #es-rc #es-rc-content ::-moz-selection {
@@ -61,7 +67,7 @@ main#maincontent {
   margin-block: 16px;
   text-transform: uppercase;
 }
-@container rc-main (min-width: 576px) {
+@container rc-main (min-width: 768px) {
   #es-rc #es-rc-content .es-section-title {
     font-size: 40px;
   }
@@ -137,6 +143,47 @@ main#maincontent {
 #es-rc #es-rc-content .es-kv__text--disclaimer {
   font-size: 13.2px;
   margin-top: 16px;
+}
+#es-rc #es-rc-content .es-sets__wrapper {
+  background-color: #d6d6d6;
+  padding: 16px 8px;
+  margin-top: -43%;
+}
+@container rc-main (min-width: 768px) {
+  #es-rc #es-rc-content .es-sets__wrapper {
+    margin-top: -28%;
+  }
+}
+#es-rc #es-rc-content .es-sets__text {
+  margin-top: 10%;
+  text-align: center;
+  text-wrap: balance;
+}
+@container rc-main (min-width: 768px) {
+  #es-rc #es-rc-content .es-sets__text {
+    margin-top: 4%;
+  }
+}
+#es-rc #es-rc-content .es-sets__headline {
+  font-family: "Futura Demi", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #e2011e;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+@container rc-main (min-width: 768px) {
+  #es-rc #es-rc-content .es-sets__headline {
+    font-size: 40px;
+  }
+}
+#es-rc #es-rc-content .es-sets__description {
+  font-size: 22px;
+}
+@container rc-main (min-width: 768px) {
+  #es-rc #es-rc-content .es-sets__description {
+    font-size: 25px;
+  }
 }
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
