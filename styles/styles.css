@@ -189,6 +189,61 @@ main#maincontent {
     font-size: 25px;
   }
 }
+#es-rc #es-rc-content .es-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 40px;
+    background-color: #d6d6d6;
+  }
+}
+#es-rc #es-rc-content .es-nav__link {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Futura Demi", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-wrap: balance;
+  display: block;
+  padding: 14px;
+  width: 100%;
+}
+#es-rc #es-rc-content .es-nav__item {
+  text-align: center;
+  border-radius: 8px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-nav__item {
+    max-width: 300px;
+  }
+}
+#es-rc #es-rc-content .es-nav__item:nth-child(1) {
+  background-color: #b00008;
+}
+#es-rc #es-rc-content .es-nav__item:nth-child(2) {
+  background-color: #c0a052;
+}
+#es-rc #es-rc-content .es-nav__item:nth-child(3) {
+  background-color: #676767;
+}
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
 #es-rc #es-rc-content .es-slider .swiper-button-next:after,
