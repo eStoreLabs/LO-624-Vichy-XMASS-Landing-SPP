@@ -7,7 +7,17 @@
     direction: "horizontal",
     loop: true,
     autoHeight: true,
-
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: root.querySelector(".es-swiper-button-next"),

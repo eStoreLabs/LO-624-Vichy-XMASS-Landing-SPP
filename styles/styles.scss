@@ -112,12 +112,55 @@ html {
     }
   }
 
+  // Swiper styles, reset some of the inherent ones
+  .es-slider {
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-next:after {
+      content: "";
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: unset;
+      height: unset;
+      position: static;
+      justify-content: unset;
+      margin: 0;
+      display: unset;
+    }
+    &__buttons {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      &--prev__img,
+      &--next__img {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin: 0;
+      }
+      &--prev__img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // Hide Swiper navigation arrows on large screens
+  @media (min-width: $media-breakpoint-xl) {
+    .es-slider__buttons {
+      display: none;
+    }
+  }
+
   .es-section-title {
     font-family: $text-secondary;
     font-size: $fs-header-mb;
     font-weight: $fw-bold;
     text-align: center;
-    margin-block: $px-M;
+    margin-block: $px-S;
     text-transform: uppercase;
     text-wrap: balance;
     color: $color-bg;
@@ -127,6 +170,7 @@ html {
     background-repeat: no-repeat;
     transition: $transition;
     @media (min-width: 768px) {
+      margin-block: $px-M;
       font-size: $fs-header-dt;
       padding: $px-XL;
     }
@@ -156,9 +200,6 @@ html {
       display: flex;
       flex-direction: column;
       gap: $px-M;
-      li {
-        line-height: 1;
-      }
       @media (min-width: $media-breakpoint-md) {
         gap: $px-L;
       }
@@ -447,40 +488,6 @@ html {
     }
   }
 
-  // Swiper styles, reset some of the inherent ones
-  .es-slider {
-    .swiper-button-prev:after,
-    .swiper-rtl .swiper-button-next:after,
-    .swiper-button-next:after,
-    .swiper-rtl .swiper-button-next:after {
-      content: "";
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: unset;
-      height: unset;
-      position: static;
-      justify-content: unset;
-      margin: 0;
-      display: unset;
-    }
-    &__buttons {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      &--prev__img,
-      &--next__img {
-        display: block;
-        width: 32px;
-        height: 32px;
-        margin: 0;
-      }
-      &--prev__img {
-        transform: rotate(180deg);
-      }
-    }
-  }
-
   .es-bottom-banner {
     background-color: #cb040b;
     color: $color-bg;
@@ -559,13 +566,15 @@ html {
     }
   }
 
-  // accessibility improvement for animations
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+  .es-footer {
+    &__text {
+      font-size: 16px;
+      text-align: center;
+      text-wrap: balance;
+      margin-top: $px-M;
+      @media (min-width: $media-breakpoint-md) {
+        font-size: 18px;
+      }
     }
   }
 }
