@@ -67,6 +67,14 @@ html {
   font-family: "Futura Demi", sans-serif;
   font-weight: 700;
 }
+@media (prefers-reduced-motion: reduce) {
+  #es-rc #es-rc-content * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 #es-rc #es-rc-content .es-section-title {
   font-family: "Futura Demi", sans-serif;
   font-size: 35px;
@@ -93,6 +101,24 @@ html {
 }
 #es-rc #es-rc-content .es-section {
   margin-block: 24px;
+}
+#es-rc #es-rc-content .es-section__text-wrapper {
+  padding: 24px;
+  color: #ffffff;
+}
+#es-rc #es-rc-content .es-section__text-headline {
+  font-family: "Futura Demi", sans-serif;
+  line-height: 1.2;
+}
+#es-rc #es-rc-content .es-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-section__list {
+    gap: 24px;
+  }
 }
 #es-rc #es-rc-content .es-kv {
   display: flex;
@@ -258,24 +284,6 @@ html {
   display: block;
   padding: 14px;
   width: 100%;
-}
-#es-rc #es-rc-content .es-section__text-wrapper {
-  padding: 24px;
-  color: #ffffff;
-}
-#es-rc #es-rc-content .es-section__text-headline {
-  font-family: "Futura Demi", sans-serif;
-  line-height: 1.2;
-}
-#es-rc #es-rc-content .es-section__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-section__list {
-    gap: 24px;
-  }
 }
 #es-rc #es-rc-content .es-ageing__text-wrapper {
   background: #ea0021;

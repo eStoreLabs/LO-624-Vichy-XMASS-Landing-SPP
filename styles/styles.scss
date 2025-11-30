@@ -102,6 +102,16 @@ html {
     font-weight: $fw-bold;
   }
 
+  // accessibility improvement for animations
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
   .es-section-title {
     font-family: $text-secondary;
     font-size: $fs-header-mb;
@@ -127,6 +137,22 @@ html {
 
   .es-section {
     margin-block: $px-L;
+    &__text-wrapper {
+      padding: $px-L;
+      color: $color-bg;
+    }
+    &__text-headline {
+      font-family: $text-secondary;
+      line-height: 1.2;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: $px-M;
+      @media (min-width: $media-breakpoint-md) {
+        gap: $px-L;
+      }
+    }
   }
 
   .es-kv {
@@ -280,25 +306,6 @@ html {
       display: block;
       padding: 14px;
       width: 100%;
-    }
-  }
-
-  .es-section {
-    &__text-wrapper {
-      padding: $px-L;
-      color: $color-bg;
-    }
-    &__text-headline {
-      font-family: $text-secondary;
-      line-height: 1.2;
-    }
-    &__list {
-      display: flex;
-      flex-direction: column;
-      gap: $px-M;
-      @media (min-width: $media-breakpoint-md) {
-        gap: $px-L;
-      }
     }
   }
 
