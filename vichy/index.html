@@ -10,23 +10,23 @@
     <style>
         @font-face {
             font-family: 'Futura Book';
-            src: url('./fonts/FuturaPTBook.woff2') format('woff2'),
-                url('./fonts/FuturaPTBook.woff') format('woff');
+            src: url('{{base_url}}/vichy/fonts/FuturaPTBook.woff2') format('woff2'),
+                url('{{base_url}}/vichy/fonts/FuturaPTBook.woff') format('woff');
             font-weight: 400;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'Futura Demi';
-            src: url('./fonts/FuturaPTDemi.woff2') format('woff2'),
-                url('./fonts/FuturaPTDemi.woff') format('woff');
+            src: url('{{base_url}}/vichy/fonts/FuturaPTDemi.woff2') format('woff2'),
+                url('{{base_url}}/vichy/fonts/FuturaPTDemi.woff') format('woff');
             font-weight: 600;
             font-style: normal;
         }
     </style>
 
-    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./style/styles.min.css">
+    <link rel="stylesheet" href="{{base_url}}/vichy/style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{{base_url}}/vichy/style/styles.min.css">
 </head>
 
 <body>
@@ -34,12 +34,12 @@
         <div id="es-rc-content">
             <div class="es-kv es-section">
                 <div class="es-kv__right">
-                    <img class="es-kv__photo" src="./images/kv-photo.jpg"
+                    <img class="es-kv__photo" src="{{base_url}}/vichy/images/kv-photo.jpg"
                         alt="Dwie odświętnie ubrane kobiety cieszą się z produktów Vichy">
                 </div>
                 <div class="es-kv__left">
                     <div class="es-kv__logo">
-                        <img class="es-kv__logo--img" src="./images/vichy-logo.jpg" alt="Logo Vichy Laboratories">
+                        <img class="es-kv__logo--img" src="{{base_url}}/vichy/images/vichy-logo.jpg" alt="Logo Vichy Laboratories">
                     </div>
                     <div class="es-kv__text-wrapper">
                         <p class="es-kv__text--num1">N &#176; 1</p>
@@ -54,9 +54,9 @@
 
             <div class="es-sets es-section">
                 <picture class="es-sets__bg">
-                    <source media="(min-width: 767px)" srcset="./images/packshots-desktop-stars.png">
-                    <source media="(max-width: 768px)" srcset="./images/packshots-mobile-stars.png">
-                    <img src="./images/packshots-mobile-stars.png" alt="">
+                    <source media="(min-width: 767px)" srcset="{{base_url}}/vichy/images/packshots-desktop-stars.png">
+                    <source media="(max-width: 768px)" srcset="{{base_url}}/vichy/images/packshots-mobile-stars.png">
+                    <img src="{{base_url}}/vichy/images/packshots-mobile-stars.png" alt="">
                 </picture>
                 <div class="es-sets__wrapper">
                     <div class="es-sets__text">
@@ -74,15 +74,15 @@
 
             <nav class="es-nav es-section" aria-label="Nawigacja do sekcji z różnymi zestawami prezentowymi">
                 <ul class="es-nav__list">
-                    <li class="es-nav__item" style="background-image: url(./images/btn1.jpg)">
+                    <li class="es-nav__item" style="background-image: url({{base_url}}/vichy/images/btn1.jpg)">
                         <a href="#es-ageing-skin" class="es-nav__link es-nav__link--1">Pierwsze oznaki&nbsp;starzenia
                         </a>
                     </li>
-                    <li class="es-nav__item" style="background-image: url(./images/btn2.jpg)">
+                    <li class="es-nav__item" style="background-image: url({{base_url}}/vichy/images/btn2.jpg)">
                         <a href="#es-mature-skin" class="es-nav__link es-nav__link--2">Skóra dojrzała
                         </a>
                     </li>
-                    <li class="es-nav__item" style="background-image: url(./images/btn3.jpg)">
+                    <li class="es-nav__item" style="background-image: url({{base_url}}/vichy/images/btn3.jpg)">
                         <a href="#es-for-men" class="es-nav__link es-nav__link--3">Dla mężczyzn
                         </a>
                     </li>
@@ -90,7 +90,7 @@
             </nav>
 
             <div class="es-ageing es-section" id="es-ageing-skin">
-                <p class="es-section-title" style="background-image: url(./images/bg-1.jpg)">Pierwsze oznaki starzenia
+                <p class="es-section-title" style="background-image: url({{base_url}}/vichy/images/bg-1.jpg)">Pierwsze oznaki starzenia
                 </p>
 
                 <div class="es-section__cross-wrapper">
@@ -105,11 +105,11 @@
                             <li>wyrównuje koloryt i&nbsp;przywraca naturalny blask skóry<sup>2</sup></li>
                         </ul>
                     </div>
-                    <div class="es-cross__wrapper" style="background-image: url(./images/bg-cross.png)">
+                    <div class="es-cross__wrapper" style="background-image: url({{base_url}}/vichy/images/bg-cross.png)">
                         <div class="es-cross__products">
                             <div class="es-cross__item">
                                 <div class="es-cross__img-wrapper">
-                                    <img class="es-cross__img" src="./images/cross-1.png"
+                                    <img class="es-cross__img" src="{{base_url}}/vichy/images/cross-1.png"
                                         alt="Zestaw prezentowy Liftactiv collagen specialist 16">
                                 </div>
                                 <div class="es-cross__text-wrapper">
@@ -130,7 +130,7 @@
             </div>
 
             <div class="es-mature es-section" id="es-mature-skin">
-                <p class="es-section-title" style="background-image: url(./images/bg-2.jpg)">Pielęgnacja skóry dojrzałej
+                <p class="es-section-title" style="background-image: url({{base_url}}/vichy/images/bg-2.jpg)">Pielęgnacja skóry dojrzałej
                 </p>
 
                 <div class="es-section__cross-wrapper">
@@ -145,7 +145,7 @@
                             <li>przywraca poczucie komfortu skóry</li>
                         </ul>
                     </div>
-                    <div class="es-cross__wrapper" style="background-image: url(./images/bg-cross-2.png)">
+                    <div class="es-cross__wrapper" style="background-image: url({{base_url}}/vichy/images/bg-cross-2.png)">
                         <div class="es-slider">
                             <div class="swiper es-swiper">
 
@@ -153,7 +153,7 @@
                                     <div class="swiper-slide es-slide">
                                         <div class="es-cross__item">
                                             <div class="es-cross__img-wrapper">
-                                                <img class="es-cross__img" src="./images/cross-2.png"
+                                                <img class="es-cross__img" src="{{base_url}}/vichy/images/cross-2.png"
                                                     alt="Zestaw prezentowy Neovadiol kompleks">
                                             </div>
                                             <div class="es-cross__text-wrapper">
@@ -172,7 +172,7 @@
                                     <div class="swiper-slide es-slide">
                                         <div class="es-cross__item">
                                             <div class="es-cross__img-wrapper">
-                                                <img class="es-cross__img" src="./images/cross-3.png"
+                                                <img class="es-cross__img" src="{{base_url}}/vichy/images/cross-3.png"
                                                     alt="Zestaw prezentowy Neovadiol magistral">
                                             </div>
                                             <div class="es-cross__text-wrapper">
@@ -190,7 +190,7 @@
                                     <div class="swiper-slide es-slide">
                                         <div class="es-cross__item">
                                             <div class="es-cross__img-wrapper">
-                                                <img class="es-cross__img" src="./images/cross-4.png"
+                                                <img class="es-cross__img" src="{{base_url}}/vichy/images/cross-4.png"
                                                     alt="Zestaw prezentowy Neovadiol rose platinum">
                                             </div>
                                             <div class="es-cross__text-wrapper">
@@ -210,11 +210,11 @@
 
                                 <div class="es-slider__buttons">
                                     <div class="swiper-button-prev es-swiper-button-prev">
-                                        <img class="es-slider__buttons--prev__img" src="./images/btn-next.png"
+                                        <img class="es-slider__buttons--prev__img" src="{{base_url}}/vichy/images/btn-next.png"
                                             alt="Cofnij do poprzedniego slajdu">
                                     </div>
                                     <div class="swiper-button-next es-swiper-button-next">
-                                        <img class="es-slider__buttons--next__img" src="./images/btn-next.png"
+                                        <img class="es-slider__buttons--next__img" src="{{base_url}}/vichy/images/btn-next.png"
                                             alt="Przewiń do następnego slajdu">
                                     </div>
                                 </div>
@@ -226,7 +226,7 @@
             </div>
 
             <div class="es-men es-section" id="es-for-men">
-                <p class="es-section-title" style="background-image: url(./images/bg-3.jpg)">Pielęgnacja dla mężczyzn
+                <p class="es-section-title" style="background-image: url({{base_url}}/vichy/images/bg-3.jpg)">Pielęgnacja dla mężczyzn
                 </p>
                 <div class="es-section__cross-wrapper">
                     <div class="es-men__text-wrapper es-section__text-wrapper">
@@ -241,11 +241,11 @@
                             <li>antyperspirant 72H&nbsp;ochrony</li>
                         </ul>
                     </div>
-                    <div class="es-cross__wrapper" style="background-image: url(./images/bg-cross.png)">
+                    <div class="es-cross__wrapper" style="background-image: url({{base_url}}/vichy/images/bg-cross.png)">
                         <div class="es-cross__products">
                             <div class="es-cross__item">
                                 <div class="es-cross__img-wrapper">
-                                    <img class="es-cross__img" src="./images/cross-5.png"
+                                    <img class="es-cross__img" src="{{base_url}}/vichy/images/cross-5.png"
                                         alt="Zestaw prezentowy Vichy homme">
                                 </div>
                                 <div class="es-cross__text-wrapper">
@@ -286,9 +286,9 @@
 
                 </div>
                 <picture class="es-bottom-banner__picture">
-                    <source media="(min-width: 767px)" srcset="./images/bottom-banner-desktop.jpg">
-                    <source media="(max-width: 768px)" srcset="./images/bottom-banner-mobile.png">
-                    <img class="es-bottom-banner__picture" src="./images/bottom-banner-mobile.png"
+                    <source media="(min-width: 767px)" srcset="{{base_url}}/vichy/images/bottom-banner-desktop.jpg">
+                    <source media="(max-width: 768px)" srcset="{{base_url}}/vichy/images/bottom-banner-mobile.png">
+                    <img class="es-bottom-banner__picture" src="{{base_url}}/vichy/images/bottom-banner-mobile.png"
                         alt="Kobiety z zestawami prezentowymi Vichy">
                 </picture>
 
@@ -303,8 +303,8 @@
             </div>
 
         </div>
-        <script src="./scripts/swiper-bundle.min.js"></script>
-        <script src="./scripts/swiperInit.min.js"></script>
+        <script src="{{base_url}}/vichy/scripts/swiper-bundle.min.js"></script>
+        <script src="{{base_url}}/vichy/scripts/swiperInit.min.js"></script>
 </body>
 
 </html>
