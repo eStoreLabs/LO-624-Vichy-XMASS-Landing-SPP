@@ -426,16 +426,7 @@ html {
         width: 75%;
       }
     }
-    &__products {
-      display: flex;
-      flex-direction: column;
-      gap: $px-L;
-      @media (min-width: $media-breakpoint-md) {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: $px-XXL;
-      }
-    }
+
     &__item {
       flex: 1 1 0;
       max-width: 300px;

@@ -378,18 +378,6 @@ html {
     width: 75%;
   }
 }
-#es-rc #es-rc-content .es-cross__products {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-cross__products {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-  }
-}
 #es-rc #es-rc-content .es-cross__item {
   flex: 1 1 0;
   max-width: 300px;
