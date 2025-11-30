@@ -20,7 +20,6 @@ main#maincontent {
   margin: auto;
   container: rc-main/inline-size;
   padding: 24px;
-  max-width: 1440px;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content {
@@ -31,6 +30,11 @@ main#maincontent {
 @media (min-width: 992px) {
   #es-rc #es-rc-content {
     padding: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #es-rc #es-rc-content {
+    max-width: 1440px;
   }
 }
 #es-rc #es-rc-content ::-moz-selection {
@@ -207,6 +211,35 @@ main#maincontent {
     background-color: #d6d6d6;
   }
 }
+#es-rc #es-rc-content .es-nav__item {
+  text-align: center;
+  border-radius: 12px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-nav__item {
+    max-width: 300px;
+  }
+}
+#es-rc #es-rc-content .es-nav__item:hover {
+  background-size: 104% 104%;
+}
+#es-rc #es-rc-content .es-nav__item:nth-child(1):hover {
+  box-shadow: 0px 0px 18px 4px #b00008;
+}
+#es-rc #es-rc-content .es-nav__item:nth-child(2):hover {
+  box-shadow: 0px 0px 18px 4px #c0a052;
+}
+#es-rc #es-rc-content .es-nav__item:nth-child(3):hover {
+  box-shadow: 0px 0px 18px 4px #676767;
+}
 #es-rc #es-rc-content .es-nav__link {
   text-decoration: none;
   color: #ffffff;
@@ -218,31 +251,6 @@ main#maincontent {
   display: block;
   padding: 14px;
   width: 100%;
-}
-#es-rc #es-rc-content .es-nav__item {
-  text-align: center;
-  border-radius: 8px;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex: 1 1 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-nav__item {
-    max-width: 300px;
-  }
-}
-#es-rc #es-rc-content .es-nav__item:nth-child(1) {
-  background-color: #b00008;
-}
-#es-rc #es-rc-content .es-nav__item:nth-child(2) {
-  background-color: #c0a052;
-}
-#es-rc #es-rc-content .es-nav__item:nth-child(3) {
-  background-color: #676767;
 }
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,

@@ -54,7 +54,6 @@ main#maincontent {
   margin: auto;
   container: rc-main / inline-size;
   padding: $px-L;
-  max-width: 1440px;
 
   @media (min-width: 768px) {
     font-size: $fs-base-dt;
@@ -63,6 +62,10 @@ main#maincontent {
 
   @media (min-width: 992px) {
     padding: $px-XXL;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1440px;
   }
 
   ::selection {
@@ -231,6 +234,40 @@ main#maincontent {
         background-color: $color-accent-2;
       }
     }
+    &__item {
+      text-align: center;
+      border-radius: 12px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex: 1 1 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: $transition;
+
+      @media (min-width: $media-breakpoint-md) {
+        max-width: 300px;
+      }
+      &:hover {
+        background-size: 104% 104%;
+      }
+      &:nth-child(1):hover {
+        -webkit-box-shadow: 0px 0px 18px 4px #b00008;
+        -moz-box-shadow: 0px 0px 18px 4px #b00008;
+        box-shadow: 0px 0px 18px 4px #b00008;
+      }
+      &:nth-child(2):hover {
+        -webkit-box-shadow: 0px 0px 18px 4px #c0a052;
+        -moz-box-shadow: 0px 0px 18px 4px #c0a052;
+        box-shadow: 0px 0px 18px 4px #c0a052;
+      }
+      &:nth-child(3):hover {
+        -webkit-box-shadow: 0px 0px 18px 4px #676767;
+        -moz-box-shadow: 0px 0px 18px 4px #676767;
+        box-shadow: 0px 0px 18px 4px #676767;
+      }
+    }
     &__link {
       text-decoration: none;
       color: $color-bg;
@@ -242,32 +279,6 @@ main#maincontent {
       display: block;
       padding: 14px;
       width: 100%;
-    }
-
-    &__item {
-      text-align: center;
-      border-radius: $px-S;
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      flex: 1 1 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @media (min-width: $media-breakpoint-md) {
-        max-width: 300px;
-      }
-
-      &:nth-child(1) {
-        background-color: #b00008;
-      }
-      &:nth-child(2) {
-        background-color: #c0a052;
-      }
-      &:nth-child(3) {
-        background-color: #676767;
-      }
     }
   }
 
