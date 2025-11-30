@@ -140,6 +140,13 @@ html {
     &__text-wrapper {
       padding: $px-L;
       color: $color-bg;
+      @media (min-width: $media-breakpoint-lg) {
+        width: 33%;
+        min-height: 500px;
+      }
+      @media (min-width: $media-breakpoint-xl) {
+        width: 25%;
+      }
     }
     &__text-headline {
       font-family: $text-secondary;
@@ -149,8 +156,17 @@ html {
       display: flex;
       flex-direction: column;
       gap: $px-M;
+      li {
+        line-height: 1;
+      }
       @media (min-width: $media-breakpoint-md) {
         gap: $px-L;
+      }
+    }
+    &__cross-wrapper {
+      @media (min-width: $media-breakpoint-lg) {
+        display: flex;
+        align-items: center;
       }
     }
   }
@@ -354,6 +370,80 @@ html {
         rgba(141, 141, 141, 1) 75%,
         rgba(143, 143, 143, 1) 100%
       );
+    }
+  }
+
+  .es-cross {
+    &__wrapper {
+      background-repeat: no-repeat;
+      @media (min-width: $media-breakpoint-lg) {
+        width: 67%;
+        height: 100%;
+        padding: $px-L;
+      }
+      @media (min-width: $media-breakpoint-lg) {
+        width: 75%;
+      }
+    }
+    &__products {
+      display: flex;
+      flex-direction: column;
+      gap: $px-L;
+      @media (min-width: $media-breakpoint-md) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: $px-XXL;
+      }
+    }
+    &__item {
+      flex: 1 1 0;
+      max-width: 300px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: center;
+      gap: $px-M;
+      @media (min-width: $media-breakpoint-lg) {
+        margin: unset;
+      }
+    }
+    &__img {
+      max-width: 235px;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    &__name {
+      font-family: $text-secondary;
+      font-weight: $fw-bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    &__desc {
+      font-size: 16px;
+      margin-top: $px-S;
+      text-transform: uppercase;
+    }
+    &__cta {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      color: $color-bg;
+      background-color: $color-main;
+      text-transform: uppercase;
+      font-family: $text-secondary;
+      font-weight: $fw-bold;
+      font-size: 20px;
+      text-wrap: balance;
+      padding: $px-M $px-XL;
+      border-radius: 12px;
+      transition: $transition;
+      &:hover {
+        background-color: $color-accent;
+      }
     }
   }
 
