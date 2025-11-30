@@ -330,6 +330,102 @@ html {
 #es-rc #es-rc-content .es-slider__buttons--prev__img {
   transform: rotate(180deg);
 }
+#es-rc #es-rc-content .es-bottom-banner {
+  background-color: #cb040b;
+  color: #ffffff;
+  text-align: center;
+  text-wrap: balance;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+#es-rc #es-rc-content .es-bottom-banner__text-wrapper {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-bottom-banner__text-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-bottom-banner__text-wrapper {
+    gap: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  #es-rc #es-rc-content .es-bottom-banner__text-wrapper {
+    gap: 40px;
+  }
+}
+#es-rc #es-rc-content .es-bottom-banner__text--headline {
+  font-family: "Futura Demi", sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 25%;
+  line-height: 0.91;
+  margin-block: 16px;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-bottom-banner__text--headline {
+    margin-block: 24px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-bottom-banner__text--headline {
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-bottom-banner__text--headline {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  #es-rc #es-rc-content .es-bottom-banner__text--headline {
+    font-size: 40px;
+  }
+}
+#es-rc #es-rc-content .es-bottom-banner__text--description {
+  font-size: 22px;
+  margin-top: 8px;
+  letter-spacing: 25%;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-bottom-banner__text--description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-bottom-banner__text--description {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #es-rc #es-rc-content .es-bottom-banner__text--description {
+    font-size: 27px;
+  }
+}
+#es-rc #es-rc-content .es-bottom-banner__picture {
+  margin-top: -65%;
+  position: relative;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-bottom-banner__picture {
+    margin-top: 0;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   #es-rc #es-rc-content * {
     animation-duration: 0.01ms !important;

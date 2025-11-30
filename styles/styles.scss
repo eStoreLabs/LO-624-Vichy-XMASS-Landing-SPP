@@ -384,6 +384,84 @@ html {
     }
   }
 
+  .es-bottom-banner {
+    background-color: #cb040b;
+    color: $color-bg;
+    text-align: center;
+    text-wrap: balance;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    &__text {
+      &-wrapper {
+        padding: $px-L;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $px-L;
+        @media (min-width: $media-breakpoint-md) {
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 60%;
+          max-width: 700px;
+        }
+        @media (min-width: $media-breakpoint-lg) {
+          gap: $px-XL;
+        }
+        @media (min-width: $media-breakpoint-xl) {
+          gap: $px-XXL;
+        }
+      }
+      &--headline {
+        font-family: $text-secondary;
+        text-transform: uppercase;
+        font-size: 35px;
+        letter-spacing: 25%;
+        line-height: 0.91;
+        margin-block: $px-M;
+        @media (min-width: $media-breakpoint-sm) {
+          margin-block: $px-L;
+        }
+        @media (min-width: $media-breakpoint-md) {
+          font-size: 32px;
+        }
+        @media (min-width: $media-breakpoint-lg) {
+          font-size: 35px;
+        }
+        @media (min-width: $media-breakpoint-xl) {
+          font-size: 40px;
+        }
+      }
+      &--description {
+        font-size: 22px;
+        margin-top: $px-S;
+        letter-spacing: 25%;
+        line-height: 1;
+        @media (min-width: $media-breakpoint-md) {
+          font-size: 18px;
+        }
+        @media (min-width: $media-breakpoint-lg) {
+          font-size: 20px;
+        }
+        @media (min-width: $media-breakpoint-xl) {
+          font-size: 27px;
+        }
+      }
+    }
+
+    &__picture {
+      margin-top: -65%;
+      position: relative;
+      z-index: -1;
+      @media (min-width: $media-breakpoint-md) {
+        margin-top: 0;
+      }
+    }
+  }
+
   // accessibility improvement for animations
   @media (prefers-reduced-motion: reduce) {
     * {
