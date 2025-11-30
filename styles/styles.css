@@ -270,11 +270,11 @@ html {
 #es-rc #es-rc-content .es-section__list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-section__list {
-    gap: 16px;
+    gap: 24px;
   }
 }
 #es-rc #es-rc-content .es-ageing__text-wrapper {
@@ -288,17 +288,18 @@ html {
   background-color: #c3a354;
 }
 #es-rc #es-rc-content .es-mature__text-wrapper {
-  background: #f0d48a;
-  background: linear-gradient(57deg, rgb(240, 212, 138) 0%, rgb(229, 200, 125) 25%, rgb(195, 163, 84) 50%, rgb(203, 171, 81) 75%, rgb(214, 182, 86) 100%);
+  background: #d6b656;
+  background: linear-gradient(57deg, rgb(214, 182, 86) 0%, rgb(203, 171, 81) 25%, rgb(195, 163, 84) 50%, rgb(229, 200, 125) 75%, rgb(240, 212, 138) 100%);
 }
 #es-rc #es-rc-content .es-men ::-moz-selection {
-  background-color: #4e4e4e;
+  background-color: #6e6e6e;
 }
 #es-rc #es-rc-content .es-men ::selection {
-  background-color: #4e4e4e;
+  background-color: #6e6e6e;
 }
 #es-rc #es-rc-content .es-men__text-wrapper {
   background: #888888;
+  background: linear-gradient(57deg, rgb(136, 136, 136) 0%, rgb(138, 138, 138) 25%, rgb(140, 140, 140) 50%, rgb(141, 141, 141) 75%, rgb(143, 143, 143) 100%);
 }
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,

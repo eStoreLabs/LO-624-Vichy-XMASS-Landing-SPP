@@ -295,9 +295,9 @@ html {
     &__list {
       display: flex;
       flex-direction: column;
-      gap: $px-S;
+      gap: $px-M;
       @media (min-width: $media-breakpoint-md) {
-        gap: $px-M;
+        gap: $px-L;
       }
     }
   }
@@ -321,24 +321,32 @@ html {
       background-color: #c3a354;
     }
     &__text-wrapper {
-      background: #f0d48a;
+      background: #d6b656;
       background: linear-gradient(
         57deg,
-        rgba(240, 212, 138, 1) 0%,
-        rgba(229, 200, 125, 1) 25%,
+        rgba(214, 182, 86, 1) 0%,
+        rgba(203, 171, 81, 1) 25%,
         rgba(195, 163, 84, 1) 50%,
-        rgba(203, 171, 81, 1) 75%,
-        rgba(214, 182, 86, 1) 100%
+        rgba(229, 200, 125, 1) 75%,
+        rgba(240, 212, 138, 1) 100%
       );
     }
   }
 
   .es-men {
     ::selection {
-      background-color: #4e4e4e;
+      background-color: #6e6e6e;
     }
     &__text-wrapper {
       background: #888888;
+      background: linear-gradient(
+        57deg,
+        rgba(136, 136, 136, 1) 0%,
+        rgba(138, 138, 138, 1) 25%,
+        rgba(140, 140, 140, 1) 50%,
+        rgba(141, 141, 141, 1) 75%,
+        rgba(143, 143, 143, 1) 100%
+      );
     }
   }
 
