@@ -10,6 +10,10 @@ main#maincontent {
   padding-bottom: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #es-rc #es-rc-content {
   font-family: "Futura Book", sans-serif;
   font-size: 22px;
@@ -70,11 +74,22 @@ main#maincontent {
   text-align: center;
   margin-block: 16px;
   text-transform: uppercase;
+  text-wrap: balance;
+  color: #ffffff;
+  padding: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
 }
-@container rc-main (min-width: 768px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content .es-section-title {
     font-size: 40px;
+    padding: 32px;
   }
+}
+#es-rc #es-rc-content .es-section-title:hover {
+  filter: brightness(1.1);
 }
 #es-rc #es-rc-content .es-section {
   margin-block: 24px;
@@ -229,16 +244,8 @@ main#maincontent {
   }
 }
 #es-rc #es-rc-content .es-nav__item:hover {
-  background-size: 104% 104%;
-}
-#es-rc #es-rc-content .es-nav__item:nth-child(1):hover {
-  box-shadow: 0px 0px 18px 4px #b00008;
-}
-#es-rc #es-rc-content .es-nav__item:nth-child(2):hover {
-  box-shadow: 0px 0px 18px 4px #c0a052;
-}
-#es-rc #es-rc-content .es-nav__item:nth-child(3):hover {
-  box-shadow: 0px 0px 18px 4px #676767;
+  background-size: 105% 105%;
+  filter: brightness(1.1);
 }
 #es-rc #es-rc-content .es-nav__link {
   text-decoration: none;
@@ -251,6 +258,47 @@ main#maincontent {
   display: block;
   padding: 14px;
   width: 100%;
+}
+#es-rc #es-rc-content .es-section__text-wrapper {
+  padding: 24px;
+  color: #ffffff;
+}
+#es-rc #es-rc-content .es-section__text-headline {
+  font-family: "Futura Demi", sans-serif;
+  line-height: 1.2;
+}
+#es-rc #es-rc-content .es-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-section__list {
+    gap: 16px;
+  }
+}
+#es-rc #es-rc-content .es-ageing__text-wrapper {
+  background: #ea0021;
+  background: linear-gradient(57deg, rgb(234, 0, 33) 0%, rgb(215, 0, 24) 25%, rgb(176, 0, 7) 50%, rgb(208, 4, 12) 75%, rgb(230, 7, 16) 100%);
+}
+#es-rc #es-rc-content .es-mature ::-moz-selection {
+  background-color: #c3a354;
+}
+#es-rc #es-rc-content .es-mature ::selection {
+  background-color: #c3a354;
+}
+#es-rc #es-rc-content .es-mature__text-wrapper {
+  background: #f0d48a;
+  background: linear-gradient(57deg, rgb(240, 212, 138) 0%, rgb(229, 200, 125) 25%, rgb(195, 163, 84) 50%, rgb(203, 171, 81) 75%, rgb(214, 182, 86) 100%);
+}
+#es-rc #es-rc-content .es-men ::-moz-selection {
+  background-color: #4e4e4e;
+}
+#es-rc #es-rc-content .es-men ::selection {
+  background-color: #4e4e4e;
+}
+#es-rc #es-rc-content .es-men__text-wrapper {
+  background: #888888;
 }
 #es-rc #es-rc-content .es-slider .swiper-button-prev:after,
 #es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,

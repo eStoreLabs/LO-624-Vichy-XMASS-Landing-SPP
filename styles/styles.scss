@@ -44,6 +44,10 @@ main#maincontent {
   padding-bottom: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #es-rc #es-rc-content {
   font-family: $text-main;
   font-size: $fs-base-mb;
@@ -105,8 +109,19 @@ main#maincontent {
     text-align: center;
     margin-block: $px-M;
     text-transform: uppercase;
-    @container rc-main (min-width: 768px) {
+    text-wrap: balance;
+    color: $color-bg;
+    padding: $px-L;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: $transition;
+    @media (min-width: 768px) {
       font-size: $fs-header-dt;
+      padding: $px-XL;
+    }
+    &:hover {
+      filter: brightness(1.1);
     }
   }
 
@@ -250,22 +265,8 @@ main#maincontent {
         max-width: 300px;
       }
       &:hover {
-        background-size: 104% 104%;
-      }
-      &:nth-child(1):hover {
-        -webkit-box-shadow: 0px 0px 18px 4px #b00008;
-        -moz-box-shadow: 0px 0px 18px 4px #b00008;
-        box-shadow: 0px 0px 18px 4px #b00008;
-      }
-      &:nth-child(2):hover {
-        -webkit-box-shadow: 0px 0px 18px 4px #c0a052;
-        -moz-box-shadow: 0px 0px 18px 4px #c0a052;
-        box-shadow: 0px 0px 18px 4px #c0a052;
-      }
-      &:nth-child(3):hover {
-        -webkit-box-shadow: 0px 0px 18px 4px #676767;
-        -moz-box-shadow: 0px 0px 18px 4px #676767;
-        box-shadow: 0px 0px 18px 4px #676767;
+        background-size: 105% 105%;
+        filter: brightness(1.1);
       }
     }
     &__link {
@@ -279,6 +280,65 @@ main#maincontent {
       display: block;
       padding: 14px;
       width: 100%;
+    }
+  }
+
+  .es-section {
+    &__text-wrapper {
+      padding: $px-L;
+      color: $color-bg;
+    }
+    &__text-headline {
+      font-family: $text-secondary;
+      line-height: 1.2;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: $px-S;
+      @media (min-width: $media-breakpoint-md) {
+        gap: $px-M;
+      }
+    }
+  }
+
+  .es-ageing {
+    &__text-wrapper {
+      background: #ea0021;
+      background: linear-gradient(
+        57deg,
+        rgba(234, 0, 33, 1) 0%,
+        rgba(215, 0, 24, 1) 25%,
+        rgba(176, 0, 7, 1) 50%,
+        rgba(208, 4, 12, 1) 75%,
+        rgba(230, 7, 16, 1) 100%
+      );
+    }
+  }
+
+  .es-mature {
+    ::selection {
+      background-color: #c3a354;
+    }
+    &__text-wrapper {
+      background: #f0d48a;
+      background: linear-gradient(
+        57deg,
+        rgba(240, 212, 138, 1) 0%,
+        rgba(229, 200, 125, 1) 25%,
+        rgba(195, 163, 84, 1) 50%,
+        rgba(203, 171, 81, 1) 75%,
+        rgba(214, 182, 86, 1) 100%
+      );
+    }
+  }
+
+  .es-men {
+    ::selection {
+      background-color: #4e4e4e;
+    }
+    &__text-wrapper {
+      background: #888888;
     }
   }
 
